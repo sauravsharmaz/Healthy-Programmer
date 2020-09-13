@@ -1,0 +1,7 @@
+9am - 5pm
+water - water.mp3 (3.5 litres) - drank -log
+eyes - eyes.mp3 - every 30 min - eye done -log
+physical activity - physical.mp3 every - 45 min - ex done
+
+Rules :
+use pygame audio to play audio
