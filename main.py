@@ -24,8 +24,8 @@ water_logs = date_for_logs + "==> Drinked Water"
 eyes_ex_logs = date_for_logs + "==> Done eye exercises"
 physical_ex_log = date_for_logs + "==> Done exercises"
 
-for i in range(16):
-    while int_time>=9 and int_time<=17:
+while int_time>=9 and int_time<=17:
+    for i in range(16):     
         print("The app will remind you in next 30 min from now")
         print("Water reminder")
         playsound(notify_sound)
@@ -81,5 +81,5 @@ for i in range(16):
                 exit()
             else:
                 continue
-    else:
-        print("please open the program between 9am - 5pm ")
+else:
+    print("\n* Please open the program between 9am - 5pm *")
