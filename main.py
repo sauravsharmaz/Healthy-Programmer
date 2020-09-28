@@ -24,9 +24,10 @@ water_logs = date_for_logs + "==> Drinked Water"
 eyes_ex_logs = date_for_logs + "==> Done eye exercises"
 physical_ex_log = date_for_logs + "==> Done exercises"
 
+print("The app will remind you in next 30 min from now")
 while int_time>=9 and int_time<=17:
     for i in range(16):     
-        print("The app will remind you in next 30 min from now")
+        time.sleep(1800)
         print("Water reminder")
         playsound(notify_sound)
         usr_resp = str(input("Press D if you have drinked water\n"))        
@@ -44,7 +45,7 @@ while int_time>=9 and int_time<=17:
             else:
                 continue
 
-        time.sleep(5)
+        time.sleep(900)
         print("Eyes exercise reminder")
         playsound(notify_sound)
         usr_resp = str(input("Press D if you have done eyes exercises\n"))
@@ -80,6 +81,6 @@ while int_time>=9 and int_time<=17:
             if usr_conf == "e" or usr_conf == "E":
                 exit()
             else:
-                continue
+                continue    
 else:
     print("\n* Please open the program between 9am - 5pm *")
